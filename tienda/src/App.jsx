@@ -7,7 +7,7 @@ import Contact from './components/contact'
 import Error from './components/error'
 import Navbar from './components/Navbar/Navbar'
 import Layout from './components/layout/layout'
-
+import ItemDetailsContainer from './components/ItemDetailsContainer'
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
           <Route element={<Layout />}>
             <Route index path='/' element={<Products />} />
             <Route path='/categories/:id' element={<Products />}/>
+            <Route path='/item/:id' element={<ItemDetailsContainer />}/>
             {/* <Route path='/products' element={<Products />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} /> */}

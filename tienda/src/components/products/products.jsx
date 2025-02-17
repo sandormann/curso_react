@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router";
-import styles from './products.module.css'
+import styles from './products.module.css';
+import { Link } from "react-router";
 
 export default function Products(){
 
@@ -25,7 +26,7 @@ export default function Products(){
                         <h2 className={styles.card__title}>{item.title}</h2>
                         <p>{item.category}</p>
                         <p>${item.price}</p>
-                        <a className={styles.cta} href="#">Ver más</a>
+                        <Link to={`/item/${item.id}`} className={styles.cta}>Ver más</Link>
                     </div>
                 ))}
             </div>

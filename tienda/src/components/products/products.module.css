@@ -38,11 +38,11 @@
     font-weight: 400;
     opacity: 0.7;
 }
-.styles-cta{
+.cta{
     background-color: blueviolet;
     text-decoration: none;
     text-align: center;
-
+    color: white;
     padding:10px 15px;
 }
             
