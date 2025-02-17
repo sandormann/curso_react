@@ -3,9 +3,10 @@ import styles from './Navbar.module.css'
 export default function Navbar(){
     return(
         <nav className={styles.nav }>
-            <NavLink to="products" className={styles.link}>Products</NavLink>
-            <NavLink to="about" className={styles.link}>About</NavLink>
-            <NavLink to="contact" className={styles.link}>Contacto</NavLink>
+            <NavLink to="/categories/electronics" className={styles.link}>Electronics</NavLink>
+            <NavLink to="/categories/jewelery" className={styles.link}>Jewelery</NavLink>
+            <NavLink to="/categories/men's clothing" className={styles.link}>Men's clothing</NavLink>
+            <NavLink to="/categories/women's clothing" className={styles.link}>Women's clothing</NavLink>
         </nav>
     )
 }

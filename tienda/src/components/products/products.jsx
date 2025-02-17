@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react"
+import { useParams } from "react-router";
 import styles from './products.module.css'
 
 export default function Products(){
 
     const [items,setItems] = useState([]);
+    const { id } = useParams()
+    
 
     useEffect(() => {
-        fetch('https://fakestoreapi.com/products')
+        const allProducts = 'https://fakestoreapi.com/products';
+        const byCategory =  `https://fakestoreapi.com/products/category/${id}`;
+        fetch( id ? byCategory : allProducts )
             .then(res => res.json())
-            .then(res => setItems(res))        
-    },[])
+            .then(res => setItems(res))       
+    },[id])
     return(
         <div className={styles.wrapper}>
             <h1 className={styles.gallery__title}>Productos</h1>
