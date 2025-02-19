@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router";
 import styles from './products.module.css';
-import { Link } from "react-router";
+import ItemList from "../ItemList";
+
 
 export default function Products(){
 
@@ -20,15 +21,8 @@ export default function Products(){
         <div className={styles.wrapper}>
             <h1 className={styles.gallery__title}>Productos</h1>
             <div className={styles.cards__container}>
-                {items.map(item => (
-                    <div key={item.id} className={styles.card}>
-                        {/* <img src={item.image} alt={item.title} /> */}
-                        <h2 className={styles.card__title}>{item.title}</h2>
-                        <p>{item.category}</p>
-                        <p>${item.price}</p>
-                        <Link to={`/item/${item.id}`} className={styles.cta}>Ver más</Link>
-                    </div>
-                ))}
+                <ItemList items={items}/>
+
             </div>
 
         </div>
