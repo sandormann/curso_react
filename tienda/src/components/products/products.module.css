@@ -21,7 +21,7 @@
     height:100%;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: 420px;
     gap: 10px;
 }
