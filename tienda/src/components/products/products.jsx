@@ -13,6 +13,8 @@ export default function Products(){
     useEffect(() => {
         const allProducts = 'https://fakestoreapi.com/products';
         const byCategory =  `https://fakestoreapi.com/products/category/${id}`;
+        
+       
         fetch( id ? byCategory : allProducts )
             .then(res => res.json())
             .then(res => setItems(res))       
@@ -22,7 +24,6 @@ export default function Products(){
             <h1 className={styles.gallery__title}>Productos</h1>
             <div className={styles.cards__container}>
                 <ItemList items={items}/>
-
             </div>
 
         </div>

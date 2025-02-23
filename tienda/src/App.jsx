@@ -4,7 +4,7 @@ import Products from './components/products/products'
 import Error from './components/Error'
 import Navbar from './components/Navbar/Navbar'
 import Layout from './components/layout/layout'
-import ItemDetailsContainer from './components/ItemDetailsContainer'
+import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsContainer'
 
 function App() {
   return (

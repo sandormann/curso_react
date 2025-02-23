@@ -13,21 +13,23 @@
     align-items: center;
     gap: 1rem;
 }
+.NavContainer{
+
+    width: 50%;
+    height: 100%;             
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
 .link{
+    
+    padding: 1rem;
     text-decoration: none;
     color: white;
     font-size: 1.27rem;
 }
-.link::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0%;
-    height: 2px;
-}
-.link:hover::after{
-    width: 100%;
-}
+
 .link:hover{
     font-size: 1.30rem;
     text-shadow: 0.5px 0.5px 1px 1px rgba(0,0,1,0.5);
