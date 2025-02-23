@@ -1,6 +1,6 @@
 .product_description{
     width: 60%;
-    height: calc(100vh -80px) ;
+    min-height: calc(100vh -80px) ;
     margin: 1.5rem auto;
 
     display: flex;
@@ -11,17 +11,16 @@
     border:1p solid rgb(189, 186, 186);
     border-radius: 20px;
 
-    box-shadow: 3px 4px 4px -1px rgba(48,53,105,0.75);
-    -webkit-box-shadow: 3px 4px 4px -1px rgba(48,53,105,0.75);
-    -moz-box-shadow: 3px 4px 4px -1px rgba(48,53,105,0.75);
-
-
+    
+    box-shadow: 2px -3px 2px 1px rgba(190,208,230,0.75);
+    -webkit-box-shadow: 2px -3px 2px 1px rgba(190,208,230,0.75);
+    -moz-box-shadow: 2px -3px 2px 1px rgba(190,208,230,0.75);
 }
 .title_description{
     text-align: center;
     font-weight: 500;
     letter-spacing: 2px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 .product_image{
     width: 50%;
